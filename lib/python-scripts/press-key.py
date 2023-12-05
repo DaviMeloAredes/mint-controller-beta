@@ -16,10 +16,10 @@ def mouse_down ():
     else:
         timestamp = 0.1
 
-    print("Registered Key: " + key + " | Event Type: " + type + " | Timestamp: " + str(timestamp))
+    print("Registered Key: " + key + " | Event Type: " + type)
 
     keyboard.press(key)
-    time.sleep(timestamp)
+    time.sleep(0.1)
     keyboard.release(key)
 
 mouse_down()
